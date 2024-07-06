@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz sui Paesi del Mondo</title>
+</head>
+<body>
+    <h1>Benvenuto al Quiz sui Paesi del Mondo!</h1>
+    <ul>
+        {% for domanda in domande %}
+            <li>
+                <a href="{{ url_for('quiz', domanda_id=domanda.id) }}">{{ domanda.testo }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

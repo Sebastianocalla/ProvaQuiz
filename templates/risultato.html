@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Risultato</title>
+</head>
+<body>
+    <h1>Risultato</h1>
+    <p>{{ domanda.testo }}</p>
+    {% if is_correct %}
+        <p>Hai risposto correttamente!</p>
+    {% else %}
+        <p>Risposta sbagliata! La risposta corretta era: {{ domanda.opzioni[domanda.risposta_corretta] }}</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Torna all'elenco delle domande</a>
+</body>
+</html>

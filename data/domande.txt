@@ -1,0 +1,3 @@
+Qual è la capitale dell'Italia?;Roma;Milano;Napoli;0
+Qual è la capitale della Francia?;Parigi;Lione;Marsiglia;0
+Qual è la capitale della Germania?;Berlino;Amburgo;Monaco;0

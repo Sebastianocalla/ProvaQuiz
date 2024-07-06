@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pytest
+sqlalchemy
+databases
+jinja2
+pydantic

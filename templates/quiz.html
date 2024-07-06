@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz: {{ domanda.testo }}</title>
+</head>
+<body>
+    <h1>Domanda: {{ domanda.testo }}</h1>
+    <form method="post" action="{{ url_for('risposta', domanda_id=domanda.id) }}">
+        <input type="radio" id="opzione1" name="risposta" value="0" required>
+        <label for="opzione1">{{ domanda.opzione1 }}</label><br>
+        <input type="radio" id="opzione2" name="risposta" value="1">
+        <label for="opzione2">{{ domanda.opzione2 }}</label><br>
+        <input type="radio" id="opzione3" name="risposta" value="2">
+        <label for="opzione3">{{ domanda.opzione3 }}</label><br><br>
+        <button type="submit">Invia</button>
+    </form>
+</body>
+</html>
